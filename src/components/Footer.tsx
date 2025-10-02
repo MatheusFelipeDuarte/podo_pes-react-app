@@ -32,8 +32,9 @@ const Footer = () => {
                 className="text-white hover:bg-white/10"
                 asChild
               >
-                <a href="https://www.instagram.com/espacopes.podologia" target="_blank" rel="noopener noreferrer">
-                  <Instagram className="w-4 h-4" />
+                <a href="https://www.instagram.com/espacopes.podologia" target="_blank" rel="noopener noreferrer" aria-label="Instagram Espaço Pés" className="inline-flex items-center gap-2">
+                  <Instagram className="w-4 h-4 text-pink-500" />
+                  <span className="font-medium">Instagram</span>
                 </a>
               </Button>
             </div>

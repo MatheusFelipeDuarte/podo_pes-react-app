@@ -95,8 +95,10 @@ const Services = () => {
   };
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-soft">
+    <section id="tratamentos" className="py-16 lg:py-24 bg-gradient-soft">
       <div className="container mx-auto px-4">
+        {/* Anchor alias for Podologia Especializada */}
+        <span id="podologia-especializada" className="block -mt-24 pt-24" aria-hidden="true"></span>
         <div className="text-center mb-12">
           <Badge variant="secondary" className="mb-4">
             <Stethoscope className="w-4 h-4 mr-2" />
@@ -116,7 +118,16 @@ const Services = () => {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <Card key={index} className="bg-white shadow-soft hover:shadow-medium transition-smooth border-0 group">
+              <Card
+                key={index}
+                id={service.title
+                  .toLowerCase()
+                  .normalize('NFD')
+                  .replace(/\p{Diacritic}/gu, '')
+                  .replace(/\s+/g, '-')
+                  .replace(/[^a-z0-9-]/g, '')}
+                className="bg-white shadow-soft hover:shadow-medium transition-smooth border-0 group scroll-mt-24"
+              >
                 <CardHeader className="pb-4">
                   <div className="flex items-start justify-between mb-3">
                     <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${getColorClasses(service.color)}`}>

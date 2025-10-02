@@ -27,22 +27,22 @@ const Hero = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-4 text-sm">
-              <div className="flex items-center gap-2">
+              <a href="#podologia-especializada" className="flex items-center gap-2 text-foreground hover:text-primary transition-smooth">
                 <CheckCircle className="w-5 h-5 text-accent" />
                 <span>Podologia Especializada</span>
-              </div>
-              <div className="flex items-center gap-2">
+              </a>
+              <a href="#pe-diabetico" className="flex items-center gap-2 text-foreground hover:text-primary transition-smooth">
                 <CheckCircle className="w-5 h-5 text-accent" />
                 <span>Pé Diabético</span>
-              </div>
-              <div className="flex items-center gap-2">
+              </a>
+              <a href="#laserterapia" className="flex items-center gap-2 text-foreground hover:text-primary transition-smooth">
                 <CheckCircle className="w-5 h-5 text-accent" />
                 <span>Laserterapia</span>
-              </div>
-              <div className="flex items-center gap-2">
+              </a>
+              <a href="#reflexologia" className="flex items-center gap-2 text-foreground hover:text-primary transition-smooth">
                 <CheckCircle className="w-5 h-5 text-accent" />
                 <span>Reflexologia</span>
-              </div>
+              </a>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">

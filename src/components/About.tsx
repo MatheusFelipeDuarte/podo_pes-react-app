@@ -99,8 +99,10 @@ const About = () => {
               </div>
             </div>
 
-            <Button variant="default" size="lg" className="w-full sm:w-auto">
-              Agendar Consulta com Dayane
+            <Button variant="default" size="lg" className="w-full sm:w-auto" asChild>
+              <a href="https://wa.me/5511947578967" target="_blank" rel="noopener noreferrer">
+                Agendar Consulta com Dayane
+              </a>
             </Button>
           </div>
         </div>
