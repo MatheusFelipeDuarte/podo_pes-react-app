@@ -39,7 +39,7 @@ const Services = () => {
       icon: Heart,
       title: "Pé Diabético",
       description: "Especialização certificada pela Universidade Facuminas. Cuidados especiais para prevenção e tratamento de complicações em pacientes diabéticos, com protocolo específico e acompanhamento contínuo.",
-      duration: "60-90 min",
+  duration: "1h",
       price: "Consultar",
       benefits: [
         "Avaliação vascular e neurológica",
@@ -52,7 +52,7 @@ const Services = () => {
       icon: Baby,
       title: "Podopediatria",
       description: "Cuidados especializados para os pés das crianças, tratando problemas específicos da infância com técnicas adequadas e ambiente acolhedor para os pequenos.",
-      duration: "30-45 min",
+  duration: "1h",
       price: "A partir de R$ 60",
       benefits: [
         "Técnicas específicas para crianças",
@@ -65,7 +65,7 @@ const Services = () => {
       icon: Users,
       title: "Podogeriatria",
       description: "Atendimento especializado para idosos, focando nas necessidades específicas da terceira idade com cuidado humanizado e atenção às limitações de mobilidade.",
-      duration: "60-75 min",
+  duration: "1h",
       price: "A partir de R$ 90",
       benefits: [
         "Cuidado adaptado às limitações",
@@ -78,7 +78,7 @@ const Services = () => {
       icon: Microscope,
       title: "Tratamento de Onicomicose",
       description: "Diagnóstico preciso e tratamento especializado de micose nas unhas com técnicas avançadas, laserterapia e acompanhamento até a cura completa.",
-      duration: "45-60 min",
+  duration: "1h",
       price: "A partir de R$ 120",
       benefits: [
         "Diagnóstico preciso",
@@ -91,7 +91,7 @@ const Services = () => {
       icon: Zap,
       title: "Laserterapia",
       description: "Tecnologia avançada para tratamento de diversos problemas podológicos, proporcionando alívio da dor, estimulação da cicatrização e tratamento de infecções.",
-      duration: "20-30 min",
+  duration: "1h",
       price: "A partir de R$ 100",
       benefits: [
         "Tecnologia de ponta",
