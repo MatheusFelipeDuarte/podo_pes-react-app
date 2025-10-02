@@ -30,10 +30,10 @@ const Header = () => {
       </div>
 
       {/* Main header */}
-      <header className="bg-white shadow-soft sticky top-0 z-50">
+      <header className="bg-white shadow-soft sticky top-0 z-50 transition-slow">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20 md:h-24">
-            <Link to="/" className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center space-x-3 transition-smooth hover:scale-105">
               <img src={logo} alt="Espaço Pés Logo" className="h-20 md:h-24 w-auto" />
             </Link>
 
@@ -58,6 +58,7 @@ const Header = () => {
                 variant="appointment" 
                 size="lg"
                 asChild
+                className="transition-bounce hover:scale-105"
               >
                 <a href="https://wa.me/5511947578967" target="_blank" rel="noopener noreferrer">
                   Agendar Consulta
@@ -67,7 +68,7 @@ const Header = () => {
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden p-2"
+              className="md:hidden p-2 transition-smooth hover:bg-muted rounded-lg"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -77,7 +78,7 @@ const Header = () => {
 
         {/* Mobile navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t border-border">
+          <div className="md:hidden bg-white border-t border-border transition-slow">
             <nav className="container mx-auto px-4 py-4 space-y-4">
               <Link 
                 to="/" 
@@ -107,7 +108,7 @@ const Header = () => {
               >
                 Blog
               </Link>
-              <Button variant="appointment" className="w-full mt-4" asChild>
+              <Button variant="appointment" className="w-full mt-4 transition-bounce hover:scale-105" asChild>
                 <a href="https://wa.me/5511947578967" target="_blank" rel="noopener noreferrer">
                   Agendar Consulta
                 </a>
