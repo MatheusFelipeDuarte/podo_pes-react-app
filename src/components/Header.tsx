@@ -23,7 +23,7 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4 text-accent" />
-              <span>Seg-Sex: 8h-18h</span>
+              <span>segunda a sexta: 8h-18h</span>
             </div>
           </div>
         </div>
