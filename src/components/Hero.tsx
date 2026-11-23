@@ -54,8 +54,8 @@ const Hero = () => {
 
             <div className="pt-2 text-xs sm:text-sm text-muted-foreground flex flex-wrap gap-4">
               <span>✓ Dayane Camarinha</span>
-              <span>✓ Especialista em Pé Diabético (Facuminas)</span>
-              <span>✓ Graduada em Nutrição</span>
+              <span>✓ Capacitada em Pé Diabético (Facuminas)</span>
+              <span>✓ Técnica em Nutrição e Dietética</span>
             </div>
           </div>
 

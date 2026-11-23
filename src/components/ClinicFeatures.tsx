@@ -4,7 +4,7 @@ import clinicHero from "@/assets/hero-clinic.jpg";
 
 const ClinicFeatures = () => {
   return (
-    <section className="py-16 lg:py-24 bg-gradient-soft border-b border-border/40" id="sobre">
+    <section className="py-16 lg:py-24 bg-gradient-soft border-b border-border/40" id="sobre-clinica">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-left">

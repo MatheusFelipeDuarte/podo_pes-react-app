@@ -20,7 +20,7 @@ const Header = () => {
             </div>
             <div className="hidden md:flex items-center gap-2">
               <MapPin className="w-4 h-4 text-secondary" />
-              <span>R. Dr. Ricardo Vilela, 1400 - Sala 5, Mogi das Cruzes</span>
+              <span>Rua Senador Dantas, 484 (Sala 6) - Casarão Maestro Berti, Mogi das Cruzes</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4 text-accent" />
@@ -47,7 +47,7 @@ const Header = () => {
               <a href={isHomePage ? "#servicos" : "/#servicos"} className="text-foreground hover:text-primary transition-smooth">
                 Serviços
               </a>
-              <a href={isHomePage ? "#sobre" : "/sobre-dayane"} className="text-foreground hover:text-primary transition-smooth">
+              <a href={isHomePage ? "#sobre-dayane" : "/sobre-dayane"} className="text-foreground hover:text-primary transition-smooth">
                 Sobre Dayane
               </a>
               <a href={isHomePage ? "#resultados" : "/#resultados"} className="text-foreground hover:text-primary transition-smooth">
@@ -117,7 +117,7 @@ const Header = () => {
                 Serviços
               </a>
               <a 
-                href={isHomePage ? "#sobre" : "/sobre-dayane"} 
+                href={isHomePage ? "#sobre-dayane" : "/sobre-dayane"} 
                 className="block text-foreground hover:text-primary transition-smooth py-1"
                 onClick={() => setIsMenuOpen(false)}
               >

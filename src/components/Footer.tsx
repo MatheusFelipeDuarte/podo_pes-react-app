@@ -47,6 +47,7 @@ const Footer = () => {
               <li><a href="#servicos" className="hover:text-primary transition-smooth">Laserterapia Podológica</a></li>
               <li><a href="#servicos" className="hover:text-primary transition-smooth">Tratamento com Órteses</a></li>
               <li><a href="#servicos" className="hover:text-primary transition-smooth">Reflexologia Podal</a></li>
+              <li><a href="#servicos" className="hover:text-primary transition-smooth">Podopediatria</a></li>
             </ul>
           </div>
 
@@ -56,7 +57,8 @@ const Footer = () => {
               <li><a href="#" className="hover:text-primary transition-smooth">Início</a></li>
               <li><a href="#problemas" className="hover:text-primary transition-smooth">Problemas que Tratamos</a></li>
               <li><a href="#servicos" className="hover:text-primary transition-smooth">Nossos Serviços</a></li>
-              <li><a href="#sobre" className="hover:text-primary transition-smooth">Sobre a Especialista</a></li>
+              <li><a href="#sobre-clinica" className="hover:text-primary transition-smooth">A Clínica</a></li>
+              <li><a href="#sobre-dayane" className="hover:text-primary transition-smooth">Sobre a Especialista</a></li>
               <li><a href="#resultados" className="hover:text-primary transition-smooth">Casos de Sucesso</a></li>
               <li><a href="#depoimentos" className="hover:text-primary transition-smooth">Depoimentos</a></li>
               <li><a href="#faq" className="hover:text-primary transition-smooth">Perguntas Frequentes</a></li>
@@ -69,7 +71,7 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-white/80">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
-                <span>R. Dr. Ricardo Vilela, 1400 - Sala 5 - Centro, Mogi das Cruzes - SP</span>
+                <span>Rua Senador Dantas, 484 (Sala 6) - Casarão Maestro Berti - Centro, Mogi das Cruzes - SP</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-accent flex-shrink-0" />
@@ -79,7 +81,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-secondary flex-shrink-0" />
-                <span>espaco.pes2025@gmail.com</span>
+                <span>espacopes1@gmail.com</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-primary flex-shrink-0" />

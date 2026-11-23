@@ -84,9 +84,8 @@ const AboutDayane = () => {
                       </div>
                     </div>
                     <p className="text-muted-foreground text-sm">
-                      Rua Doutor Ricardo Vilela, 1400 - Sala 5<br />
-                      Mogi das Cruzes, SP<br />
-                      (Ao lado do Haha House Comedy)
+                      Rua Senador Dantas, 484 (Sala 6) - Casarão Maestro Berti<br />
+                      Mogi das Cruzes, SP
                     </p>
                   </CardContent>
                 </Card>

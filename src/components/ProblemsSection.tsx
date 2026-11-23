@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
-import clinicImage from "@/assets/hero-clinic.jpg";
+import chamarizImage from "@/assets/chamariz.jpg";
 
 const ProblemsSection = () => {
   return (
@@ -46,7 +46,7 @@ const ProblemsSection = () => {
 
             <div className="rounded-2xl overflow-hidden shadow-strong border border-border w-full max-w-[340px] aspect-[4/5]">
               <img
-                src={clinicImage}
+                src={chamarizImage}
                 alt="Cuidados de podologia no Espaço Pés"
                 className="w-full h-full object-cover"
               />

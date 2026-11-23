@@ -8,9 +8,9 @@ const LocationSection = () => {
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="rounded-2xl overflow-hidden shadow-medium border border-border min-h-[380px] h-full flex flex-col">
             <iframe
-              src="https://maps.google.com/maps?q=Rua%20Doutor%20Ricardo%20Vilela%2C%201400%20-%20Centro%2C%20Mogi%20das%20Cruzes%20-%20SP&t=m&z=16&output=embed&iwloc=near"
-              title="R. Dr. Ricardo Vilela, 1400 - Sala 5 - Centro, Mogi das Cruzes - SP"
-              aria-label="R. Dr. Ricardo Vilela, 1400 - Sala 5 - Centro, Mogi das Cruzes - SP"
+              src="https://maps.google.com/maps?q=Rua%20Senador%20Dantas%2C%20484%20-%20Centro%2C%20Mogi%20das%20Cruzes%20-%20SP&t=m&z=16&output=embed&iwloc=near"
+              title="Rua Senador Dantas, 484 (Sala 6) - Casarão Maestro Berti - Centro, Mogi das Cruzes - SP"
+              aria-label="Rua Senador Dantas, 484 (Sala 6) - Casarão Maestro Berti - Centro, Mogi das Cruzes - SP"
               className="w-full h-full min-h-[380px] border-0"
               loading="lazy"
             ></iframe>
@@ -31,10 +31,10 @@ const LocationSection = () => {
                 Nos visite
               </h3>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                R. Dr. Ricardo Vilela, 1400 – Sala 5 – Centro, Mogi das Cruzes – SP, 08780-060
+                Rua Senador Dantas, 484 (Sala 6) - Casarão Maestro Berti – Centro, Mogi das Cruzes – SP
               </p>
               <p className="text-muted-foreground text-sm sm:text-base font-medium">
-                Temos estacionamento próprio no local. (Ao lado do Haha House Comedy)
+                Temos estacionamento próprio no local.
               </p>
             </div>
 

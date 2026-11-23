@@ -42,6 +42,10 @@ const Services = () => {
     {
       title: "Tratamento de Órteses (Correção de unha encravada)",
       description: "Para unhas encravadas, a solução envolve a colocação de dispositivos ortopédicos que ajudam a corrigir e aliviar a pressão da unha, melhorando a condição da lâmina."
+    },
+    {
+      title: "Podopediatria",
+      description: "Cuidados especializados para os pés de bebês, crianças e adolescentes, com técnicas suaves e preventivas para tratar alterações e garantir um crescimento saudável."
     }
   ];
 

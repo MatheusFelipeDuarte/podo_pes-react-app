@@ -1,32 +1,68 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight, CheckCircle2 } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+import onicoAntes from "@/assets/pes/1-Onicocriptose-antes.jpeg";
+import onicoDepois from "@/assets/pes/1-Onicocriptose-depois.jpeg";
+import desbasteAntes from "@/assets/pes/2-Desbaste-antes.jpeg";
+import desbasteDepois from "@/assets/pes/2-Desbaste-depois.jpeg";
+import rachadurasAntes from "@/assets/pes/3-Rachaduras-antes.jpeg";
+import rachadurasDepois from "@/assets/pes/3-Rachaduras-depois.jpeg";
+import orteseAntes from "@/assets/pes/4-Ortese-antes.jpeg";
+import orteseDepois from "@/assets/pes/4-Ortese-depois.jpeg";
+import diabetesAntes from "@/assets/pes/5-Diabetes-antes.jpeg";
+import diabetesDepois from "@/assets/pes/5-Diabetes-depois.jpeg";
+import micoseAntes from "@/assets/pes/6-Micose-antes.jpeg";
+import micoseDepois from "@/assets/pes/6-Micose-depois.jpeg";
 
 const BeforeAfterGallery = () => {
   const slides = [
     {
       title: "Desencravamento de Unha (Onicocriptose)",
+      description: "Remoção técnica da espícula causadora de dor e inflamação lateral, com alívio imediato e sem necessidade de anestesia invasiva.",
+      beforeImage: onicoAntes,
+      afterImage: onicoDepois,
       beforeLabel: "Antes",
-      afterLabel: "Depois",
-      description: "Remoção técnica da espícula causadora de dor e inflamação lateral, com alívio imediato e sem necessidade de anestesia invasiva."
+      afterLabel: "Depois"
     },
     {
       title: "Desbaste de Calosidades e Helomas",
+      description: "Desbaste seguro e indolor de camadas hiperqueratósicas na região plantar, devolvendo conforto instantâneo ao pisar.",
+      beforeImage: desbasteAntes,
+      afterImage: desbasteDepois,
       beforeLabel: "Antes",
-      afterLabel: "Depois",
-      description: "Desbaste seguro e indolor de camadas hiperqueratósicas na região plantar, devolvendo conforto instantâneo ao pisar."
+      afterLabel: "Depois"
     },
     {
       title: "Tratamento de Fissuras e Rachaduras",
+      description: "Assepsia, hidratação oclusiva profunda e fechamento de fissuras abertas nos calcanhares.",
+      beforeImage: rachadurasAntes,
+      afterImage: rachadurasDepois,
       beforeLabel: "Antes",
-      afterLabel: "Depois",
-      description: "Assepsia, hidratação oclusiva profunda e fechamento de fissuras abertas nos calcanhares."
+      afterLabel: "Depois"
     },
     {
       title: "Aplicação de Órtese Corretiva",
+      description: "Correção gradual da curvatura da lâmina ungueal que pressionava as dobras laterais do dedo.",
+      beforeImage: orteseAntes,
+      afterImage: orteseDepois,
       beforeLabel: "Antes",
-      afterLabel: "Depois",
-      description: "Correção gradual da curvatura da lâmina ungueal que pressionava as dobras laterais do dedo."
+      afterLabel: "Depois"
+    },
+    {
+      title: "Pé Diabético",
+      description: "Pé de pessoa com diabete (pé de risco), neuropatia diabética, falta de sensibilidade nos pés, prevenção de amputações.",
+      beforeImage: diabetesAntes,
+      afterImage: diabetesDepois,
+      beforeLabel: "Antes",
+      afterLabel: "Depois"
+    },
+    {
+      title: "Onicomicose",
+      description: "Tratamento especializado para eliminação de fungos e bactérias, restaurando a estrutura, espessura e crescimento saudável das unhas.",
+      beforeImage: micoseAntes,
+      afterImage: micoseDepois,
+      beforeLabel: "Antes",
+      afterLabel: "Depois"
     }
   ];
 
@@ -64,23 +100,26 @@ const BeforeAfterGallery = () => {
           </div>
 
           <div className="grid sm:grid-cols-2 gap-6 my-8">
-            <div className="bg-destructive/5 rounded-2xl p-8 border border-destructive/20 text-center flex flex-col justify-center items-center min-h-[220px]">
-              <span className="text-xs font-black uppercase tracking-wider bg-destructive text-white px-4 py-1.5 rounded-full mb-4">
+            <div className="relative rounded-2xl overflow-hidden border border-destructive/20 bg-muted shadow-soft aspect-[4/3] group">
+              <img
+                src={slides[currentIndex].beforeImage}
+                alt={`Antes - ${slides[currentIndex].title}`}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <span className="absolute top-4 left-1/2 -translate-x-1/2 z-10 text-xs font-black uppercase tracking-wider bg-destructive text-white px-4 py-1.5 rounded-full shadow-md">
                 {slides[currentIndex].beforeLabel}
               </span>
-              <p className="text-foreground font-semibold text-lg">Quadro com dor e incômodo</p>
-              <p className="text-xs text-muted-foreground mt-2">Pele espessada, inflamação ou pressão anormal</p>
             </div>
 
-            <div className="bg-primary/5 rounded-2xl p-8 border border-primary/20 text-center flex flex-col justify-center items-center min-h-[220px]">
-              <span className="text-xs font-black uppercase tracking-wider bg-primary text-white px-4 py-1.5 rounded-full mb-4">
+            <div className="relative rounded-2xl overflow-hidden border border-primary/20 bg-muted shadow-soft aspect-[4/3] group">
+              <img
+                src={slides[currentIndex].afterImage}
+                alt={`Depois - ${slides[currentIndex].title}`}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <span className="absolute top-4 left-1/2 -translate-x-1/2 z-10 text-xs font-black uppercase tracking-wider bg-primary text-white px-4 py-1.5 rounded-full shadow-md">
                 {slides[currentIndex].afterLabel}
               </span>
-              <p className="text-foreground font-semibold text-lg flex items-center justify-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-primary" />
-                Alívio e restauração total
-              </p>
-              <p className="text-xs text-muted-foreground mt-2">Pés saudáveis, lisos e livres de dor</p>
             </div>
           </div>
 
@@ -97,9 +136,8 @@ const BeforeAfterGallery = () => {
                 <button
                   key={i}
                   onClick={() => setCurrentIndex(i)}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    currentIndex === i ? "bg-primary w-6" : "bg-border"
-                  }`}
+                  className={`w-3 h-3 rounded-full transition-all ${currentIndex === i ? "bg-primary w-6" : "bg-border"
+                    }`}
                   aria-label={`Slide ${i + 1}`}
                 />
               ))}

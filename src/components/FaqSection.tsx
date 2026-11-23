@@ -20,10 +20,6 @@ const FaqSection = () => {
       answer: "Podologia é prevenção, realizar consultas preventivas em períodos estipulados (a cada 30 a 45 dias) é o melhor caminho."
     },
     {
-      question: "Como identificar um bom podólogo?",
-      answer: "Procure um profissional devidamente habilitado, com formação acadêmica e especializações em podologia, que siga rigorosas boas práticas de higiene e esterilização em autoclave e que tenha experiência na área. Entre em contato conosco 🙂"
-    },
-    {
       question: "Que tipo de tratamentos a podologia oferece?",
       answer: "A podologia oferece uma variedade de tratamentos, incluindo limpeza e higienização dos pés, corte correto das unhas, remoção de calosidades, tratamento de micoses nas unhas, desencravamento, órteses e reflexologia."
     },
