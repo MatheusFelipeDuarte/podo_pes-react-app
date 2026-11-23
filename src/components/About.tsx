@@ -27,7 +27,7 @@ const About = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-strong">
               <img 
                 src={dayanePortrait2}
-                alt="Dayane Camarinha - Podóloga especialista em pé diabético, nutricionista"
+                alt="Dayane Camarinha - Podóloga capacitada em pé diabético, nutricionista"
                 className="w-full h-auto object-cover"
               />
             </div>

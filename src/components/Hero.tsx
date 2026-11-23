@@ -1,108 +1,75 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Star, Award, Users } from "lucide-react";
-import heroImage from "@/assets/hero-clinic.jpg";
-import { Link } from "react-router-dom";
+import { MessageCircle } from "lucide-react";
+import dayanePortrait from "@/assets/dayane-portrait.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-soft overflow-hidden">
-      <div className="container mx-auto px-4 py-16 lg:py-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <Badge variant="secondary" className="bg-primary-soft text-primary border-primary/20">
-                🏆 Especialista Certificada em Pé Diabético
-              </Badge>
-              
-              <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-                Cuidado Especializado para Seus 
-                <span className="bg-gradient-hero bg-clip-text text-transparent"> Pés</span>
-              </h1>
-              
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                Com Dayane Camarinha, nutricionista e podóloga especializada em pé diabético pela Universidade Facuminas. 
-                Oferecemos tratamentos avançados com tecnologia de ponta e cuidado humanizado.
+    <section className="relative bg-gradient-soft py-12 lg:py-20 border-b border-border/40 overflow-hidden">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="lg:col-span-7 space-y-6 text-left">
+            <h2 className="text-xl sm:text-2xl font-bold text-primary tracking-wide">
+              Espaço Pés
+            </h2>
+
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-foreground leading-[1.15]">
+              A solução em <br />
+              <span className="text-primary">Mogi das Cruzes</span> para <br />
+              os seus problemas de pés
+            </h1>
+
+            <div className="space-y-1 text-base sm:text-lg text-foreground/90 font-medium">
+              <p className="font-bold text-foreground">
+                Cuidando dos seus Pés há mais de 3 anos!
+              </p>
+              <p>
+                Cuide de quem <strong className="text-primary font-bold">te sustenta o dia inteiro!</strong>
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 text-sm">
-              <a href="#podologia-especializada" className="flex items-center gap-2 text-foreground hover:text-primary transition-smooth">
-                <CheckCircle className="w-5 h-5 text-accent" />
-                <span>Podologia Especializada</span>
-              </a>
-              <a href="#pe-diabetico" className="flex items-center gap-2 text-foreground hover:text-primary transition-smooth">
-                <CheckCircle className="w-5 h-5 text-accent" />
-                <span>Pé Diabético</span>
-              </a>
-              <a href="#laserterapia" className="flex items-center gap-2 text-foreground hover:text-primary transition-smooth">
-                <CheckCircle className="w-5 h-5 text-accent" />
-                <span>Laserterapia</span>
-              </a>
-              <a href="#reflexologia" className="flex items-center gap-2 text-foreground hover:text-primary transition-smooth">
-                <CheckCircle className="w-5 h-5 text-accent" />
-                <span>Reflexologia</span>
-              </a>
+            <div className="p-4 rounded-xl bg-white/90 border border-border shadow-soft max-w-lg">
+              <p className="text-sm sm:text-base text-foreground leading-relaxed">
+                Consulta particular, garantindo um cuidado diferenciado.{" "}
+                <strong className="text-accent font-bold">Não aceitamos convênios!</strong>
+              </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-4" asChild>
-                <a href="https://wa.me/5511947578967" target="_blank" rel="noopener noreferrer">
-                  Agendar Consulta
+            <div className="pt-2">
+              <Button
+                size="lg"
+                className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-black text-base sm:text-lg px-8 py-6 rounded-md shadow-medium hover:scale-105 transition-smooth w-full sm:w-auto"
+                asChild
+              >
+                <a
+                  href="https://wa.me/5511947578967?text=Ol%C3%A1,%20venho%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3"
+                >
+                  <MessageCircle className="w-6 h-6 fill-white" />
+                  <span>AGENDAR TRATAMENTO</span>
                 </a>
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4" asChild>
-                <Link to="/servicos">
-                  Conheça Nossos Serviços
-                </Link>
-              </Button>
             </div>
 
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border/50">
-              <div className="text-center">
-                <div className="flex items-center justify-center mb-2">
-                  <Star className="w-5 h-5 text-primary mr-1" />
-                  <span className="text-2xl font-bold text-foreground">4.9</span>
-                </div>
-                <p className="text-sm text-muted-foreground">Avaliação Média</p>
-              </div>
-              <div className="text-center">
-                <div className="flex items-center justify-center mb-2">
-                  <Users className="w-5 h-5 text-secondary mr-1" />
-                  <span className="text-2xl font-bold text-foreground">500+</span>
-                </div>
-                <p className="text-sm text-muted-foreground">Pacientes Atendidos</p>
-              </div>
-              <div className="text-center">
-                <div className="flex items-center justify-center mb-2">
-                  <Award className="w-5 h-5 text-accent mr-1" />
-                  <span className="text-2xl font-bold text-foreground">2022</span>
-                </div>
-                <p className="text-sm text-muted-foreground">Desde</p>
-              </div>
+            <div className="pt-2 text-xs sm:text-sm text-muted-foreground flex flex-wrap gap-4">
+              <span>✓ Dayane Camarinha</span>
+              <span>✓ Capacitada em Pé Diabético (Facuminas)</span>
+              <span>✓ Técnica em Nutrição e Dietética</span>
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-strong">
-              <img 
-                src={heroImage} 
-                alt="Clínica Espaço Pés - Ambiente profissional e acolhedor para tratamentos de podologia"
-                className="w-full h-auto object-cover"
+          <div className="lg:col-span-5 flex justify-center">
+            <div className="relative w-full max-w-[380px] rounded-3xl overflow-hidden shadow-strong border-4 border-white bg-white">
+              <img
+                src={dayanePortrait}
+                alt="Dayane Camarinha Podóloga em Mogi das Cruzes"
+                className="w-full h-auto object-cover max-h-[540px]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-            </div>
-            
-            {/* Floating badge */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-medium">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-accent rounded-lg flex items-center justify-center">
-                  <Award className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">Certificação</p>
-                  <p className="text-sm text-muted-foreground">Pé Diabético - Facuminas</p>
-                </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+              <div className="absolute bottom-4 left-4 right-4 text-white text-center">
+                <p className="font-bold text-lg drop-shadow">Dayane Camarinha</p>
+                <p className="text-xs text-white/90 drop-shadow">Podóloga & Nutricionista</p>
               </div>
             </div>
           </div>

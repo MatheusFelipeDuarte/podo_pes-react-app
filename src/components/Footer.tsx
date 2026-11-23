@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { 
   MapPin, 
@@ -6,116 +5,114 @@ import {
   Mail, 
   Clock, 
   Instagram,
-  Heart
+  Heart,
+  ShieldCheck,
+  Award
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo-espacopes.jpg";
 
 const Footer = () => {
   return (
     <footer className="bg-foreground text-white">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {/* Brand and mission */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="space-y-4">
-            <div>
-              <h3 className="text-xl font-bold">Espaço Pés</h3>
-              <p className="text-sm text-white/70">Podologia, Especialização e Saúde</p>
+            <div className="bg-white p-2 rounded-xl inline-block max-w-[160px]">
+              <img src={logo} alt="Espaço Pés" className="h-12 w-auto object-contain" />
             </div>
-            <p className="text-white/80 leading-relaxed">
-              Cuidado especializado para seus pés com Dayane Camarinha, nutricionista e podóloga 
-              certificada em pé diabético pela Universidade Facuminas.
+            <p className="text-white/80 text-sm leading-relaxed">
+              Clínica de podologia especializada em saúde dos pés e pé diabético em Mogi das Cruzes. Atendimento particular com cuidado humanizado por Dayane Camarinha.
             </p>
-            <div className="flex space-x-4">
-              <Button 
-                variant="ghost" 
-                size="sm" 
-                className="text-white hover:bg-white/10"
-                asChild
+            <div>
+              <a 
+                href="https://www.instagram.com/espacopes.podologia" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center gap-2 text-sm text-white/90 hover:text-white bg-white/10 hover:bg-white/20 px-3 py-2 rounded-lg transition-smooth"
               >
-                <a href="https://www.instagram.com/espacopes.podologia" target="_blank" rel="noopener noreferrer" aria-label="Instagram Espaço Pés" className="inline-flex items-center gap-2">
-                  <Instagram className="w-4 h-4 text-pink-500" />
-                  <span className="font-medium">Instagram</span>
+                <Instagram className="w-4 h-4 text-pink-400" />
+                <span>@espacopes.podologia</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="text-base font-bold text-white uppercase tracking-wider">Tratamentos</h4>
+            <ul className="space-y-2 text-sm text-white/70">
+              <li><a href="#servicos" className="hover:text-primary transition-smooth">Podologia Completa</a></li>
+              <li><a href="#servicos" className="hover:text-primary transition-smooth">Unhas Encravadas</a></li>
+              <li><a href="#servicos" className="hover:text-primary transition-smooth">Desbaste de Calos</a></li>
+              <li><a href="#servicos" className="hover:text-primary transition-smooth">Pé Diabético Especializado</a></li>
+              <li><a href="#servicos" className="hover:text-primary transition-smooth">Laserterapia Podológica</a></li>
+              <li><a href="#servicos" className="hover:text-primary transition-smooth">Tratamento com Órteses</a></li>
+              <li><a href="#servicos" className="hover:text-primary transition-smooth">Reflexologia Podal</a></li>
+              <li><a href="#servicos" className="hover:text-primary transition-smooth">Podopediatria</a></li>
+            </ul>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="text-base font-bold text-white uppercase tracking-wider">Navegação</h4>
+            <ul className="space-y-2 text-sm text-white/70">
+              <li><a href="#" className="hover:text-primary transition-smooth">Início</a></li>
+              <li><a href="#problemas" className="hover:text-primary transition-smooth">Problemas que Tratamos</a></li>
+              <li><a href="#servicos" className="hover:text-primary transition-smooth">Nossos Serviços</a></li>
+              <li><a href="#sobre-clinica" className="hover:text-primary transition-smooth">A Clínica</a></li>
+              <li><a href="#sobre-dayane" className="hover:text-primary transition-smooth">Sobre a Especialista</a></li>
+              <li><a href="#resultados" className="hover:text-primary transition-smooth">Casos de Sucesso</a></li>
+              <li><a href="#depoimentos" className="hover:text-primary transition-smooth">Depoimentos</a></li>
+              <li><a href="#faq" className="hover:text-primary transition-smooth">Perguntas Frequentes</a></li>
+              <li><a href="#contato" className="hover:text-primary transition-smooth">Localização e Contato</a></li>
+            </ul>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="text-base font-bold text-white uppercase tracking-wider">Contato & Local</h4>
+            <div className="space-y-3 text-sm text-white/80">
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
+                <span>Rua Senador Dantas, 484 (Sala 6) - Casarão Maestro Berti - Centro, Mogi das Cruzes - SP</span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <Phone className="w-4 h-4 text-accent flex-shrink-0" />
+                <a href="https://wa.me/5511947578967" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                  (11) 94757-8967
                 </a>
-              </Button>
-            </div>
-          </div>
-
-          {/* Contact info */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Contato</h4>
-            <div className="space-y-3">
-              <div className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-primary" />
-                <span className="text-white/80">(11) 94757-8967</span>
               </div>
-              <div className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-secondary" />
-                <span className="text-white/80">espaco.pes2025@gmail.com</span>
+              <div className="flex items-center gap-2.5">
+                <Mail className="w-4 h-4 text-secondary flex-shrink-0" />
+                <span>espacopes1@gmail.com</span>
               </div>
-              <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-accent mt-1" />
-                <div className="text-white/80">
-                  <p>Rua Doutor Ricardo Vilela, 1400 - Sala 5</p>
-                  <p className="text-sm">Mogi das Cruzes, SP</p>
-                  <p className="text-sm">(Ao lado do Haha House Comedy)</p>
-                </div>
+              <div className="flex items-center gap-2.5">
+                <Clock className="w-4 h-4 text-primary flex-shrink-0" />
+                <span>Seg à Sex: 08:00 às 18:00</span>
               </div>
-              <div className="flex items-center gap-3">
-                <Clock className="w-4 h-4 text-primary" />
-                <div className="text-white/80">
-                  <p>segunda a sexta: 8h às 18h</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Quick links */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Links Rápidos</h4>
-            <div className="space-y-2">
-              <Link to="/" className="block text-white/80 hover:text-white transition-smooth">
-                Início
-              </Link>
-              <Link to="/servicos" className="block text-white/80 hover:text-white transition-smooth">
-                Serviços
-              </Link>
-              <Link to="/sobre-dayane" className="block text-white/80 hover:text-white transition-smooth">
-                Sobre Dayane
-              </Link>
-              <Link to="/blog" className="block text-white/80 hover:text-white transition-smooth">
-                Blog
-              </Link>
             </div>
           </div>
         </div>
 
-        <Separator className="bg-white/20 mb-8" />
+        <Separator className="bg-white/10 mb-8" />
 
-        {/* Values section */}
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
-          <div className="text-center p-4 bg-white/5 rounded-lg">
-            <Heart className="w-8 h-8 text-primary mx-auto mb-2" />
-            <h5 className="font-semibold mb-1">Cuidado Humanizado</h5>
-            <p className="text-sm text-white/70">Cada paciente é único e merece atenção personalizada</p>
+        <div className="grid sm:grid-cols-3 gap-4 mb-8 text-center text-xs text-white/70">
+          <div className="flex items-center justify-center gap-2 p-3 rounded-lg bg-white/5">
+            <ShieldCheck className="w-4 h-4 text-primary" />
+            <span>Biossegurança e esterilização hospitalar</span>
           </div>
-          <div className="text-center p-4 bg-white/5 rounded-lg">
-            <Heart className="w-8 h-8 text-secondary mx-auto mb-2" />
-            <h5 className="font-semibold mb-1">Excelência Técnica</h5>
-            <p className="text-sm text-white/70">Tecnologias avançadas e técnicas especializadas</p>
+          <div className="flex items-center justify-center gap-2 p-3 rounded-lg bg-white/5">
+            <Award className="w-4 h-4 text-accent" />
+            <span>Certificação em Pé Diabético (Facuminas)</span>
           </div>
-          <div className="text-center p-4 bg-white/5 rounded-lg">
-            <Heart className="w-8 h-8 text-accent mx-auto mb-2" />
-            <h5 className="font-semibold mb-1">Ética Profissional</h5>
-            <p className="text-sm text-white/70">Transparência e responsabilidade em cada atendimento</p>
+          <div className="flex items-center justify-center gap-2 p-3 rounded-lg bg-white/5">
+            <Heart className="w-4 h-4 text-pink-400" />
+            <span>Atendimento acolhedor e particular</span>
           </div>
         </div>
 
-        <Separator className="bg-white/20 mb-6" />
+        <Separator className="bg-white/10 mb-6" />
 
-        {/* Copyright */}
-        <div className="text-center text-white/60 text-sm">
-          <p>© 2024 Espaço Pés - Podologia, Especialização e Saúde. Todos os direitos reservados.</p>
-          <p className="mt-1">Desenvolvido com ❤️ para cuidar da saúde dos seus pés</p>
+        <div className="flex flex-col sm:flex-row items-center justify-between text-white/60 text-xs gap-3">
+          <p>© {new Date().getFullYear()} Espaço Pés - Dayane Camarinha Podologia. Todos os direitos reservados.</p>
+          <p>Mogi das Cruzes - SP</p>
         </div>
       </div>
     </footer>
