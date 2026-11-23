@@ -14,14 +14,24 @@ const Header = () => {
       <div className="bg-gradient-soft border-b border-primary/20">
         <div className="container mx-auto px-4 py-2">
           <div className="flex flex-wrap items-center justify-between text-xs sm:text-sm text-muted-foreground gap-2">
-            <div className="flex items-center gap-2">
+            <a
+              href="https://wa.me/5511947578967"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-primary transition-smooth cursor-pointer"
+            >
               <Phone className="w-4 h-4 text-primary" />
-              <span className="font-semibold text-foreground">(11) 94757-8967</span>
-            </div>
-            <div className="hidden md:flex items-center gap-2">
+              <span className="font-semibold text-foreground hover:text-primary transition-smooth">(11) 94757-8967</span>
+            </a>
+            <a
+              href="https://maps.google.com/?q=Rua+Senador+Dantas,+484+-+Centro,+Mogi+das+Cruzes+-+SP"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:flex items-center gap-2 hover:text-primary transition-smooth cursor-pointer"
+            >
               <MapPin className="w-4 h-4 text-secondary" />
               <span>Rua Senador Dantas, 484 (Sala 6) - Casarão Maestro Berti, Mogi das Cruzes</span>
-            </div>
+            </a>
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4 text-accent" />
               <span>Seg à Sex: 8h às 18h</span>

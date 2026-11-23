@@ -15,7 +15,7 @@ const Hero = () => {
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-foreground leading-[1.15]">
               A solução em <br />
               <span className="text-primary">Mogi das Cruzes</span> para <br />
-              os seus problemas de pés
+              os seus pés
             </h1>
 
             <div className="space-y-1 text-base sm:text-lg text-foreground/90 font-medium">
