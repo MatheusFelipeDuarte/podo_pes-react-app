@@ -8,11 +8,17 @@ import {
   Award,
   Heart,
   Target,
-  Users,
   BookOpen,
   Briefcase
 } from "lucide-react";
 import dayanePortrait2 from "@/assets/dayane-portrait-2.jpg";
+import podologiaImg from "@/assets/tratamentos/1-podologia-normal.jpg";
+import peDiabeticoImg from "@/assets/tratamentos/2-pe-diabetico.jpg";
+import podogeriatriaImg from "@/assets/tratamentos/3-podogeriatria.jpg";
+import micoseImg from "@/assets/tratamentos/4-micose.jpg";
+import feridasImg from "@/assets/tratamentos/5-eridas.jpg";
+import podopediatriaImg from "@/assets/tratamentos/6-podopediatria.jpg";
+import infeccoesImg from "@/assets/tratamentos/7-infecções.jpg";
 
 const AboutDayane = () => {
   const formacoes = [
@@ -34,13 +40,13 @@ const AboutDayane = () => {
   ];
 
   const areasAtuacao = [
-    "Podologia",
-    "Pé Diabético",
-    "Podogeriatria",
-    "Micologia",
-    "Feridas",
-    "Podopediatria",
-    "Tratamento de Infecções"
+    { title: "Podologia", image: podologiaImg },
+    { title: "Pé Diabético", image: peDiabeticoImg },
+    { title: "Podogeriatria", image: podogeriatriaImg },
+    { title: "Micologia", image: micoseImg },
+    { title: "Feridas", image: feridasImg },
+    { title: "Podopediatria", image: podopediatriaImg },
+    { title: "Tratamento de Infecções", image: infeccoesImg }
   ];
 
   return (
@@ -195,14 +201,18 @@ const AboutDayane = () => {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
               {areasAtuacao.map((area, index) => (
-                <Card key={index} className="bg-white shadow-soft hover:shadow-medium transition-smooth border-0 text-center">
-                  <CardContent className="p-6">
-                    <div className="w-12 h-12 bg-primary-soft rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Users className="w-6 h-6 text-primary" />
-                    </div>
-                    <h4 className="font-semibold text-foreground">{area}</h4>
+                <Card key={index} className="bg-white shadow-soft hover:shadow-medium transition-smooth border-0 overflow-hidden text-center group">
+                  <div className="aspect-[4/3] w-full overflow-hidden bg-muted">
+                    <img
+                      src={area.image}
+                      alt={area.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  <CardContent className="p-4 sm:p-5">
+                    <h4 className="font-semibold text-foreground text-base sm:text-lg">{area.title}</h4>
                   </CardContent>
                 </Card>
               ))}
