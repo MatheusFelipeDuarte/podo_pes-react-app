@@ -25,6 +25,7 @@ const Header = () => {
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4 text-accent" />
               <span>Seg à Sex: 8h às 18h</span>
+              <span>Sabado: 9h às 14h</span>
             </div>
           </div>
         </div>
@@ -65,14 +66,14 @@ const Header = () => {
             </nav>
 
             <div className="hidden md:flex items-center space-x-4">
-              <Button 
+              <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-white font-bold shadow-soft transition-smooth"
                 asChild
               >
-                <a 
-                  href="https://wa.me/5511947578967?text=Ol%C3%A1,%20gostaria%20de%20agendar%20um%20atendimento." 
-                  target="_blank" 
+                <a
+                  href="https://wa.me/5511947578967?text=Ol%C3%A1,%20gostaria%20de%20agendar%20um%20atendimento."
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
                 >
@@ -95,57 +96,57 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden bg-white border-t border-border shadow-medium">
             <nav className="container mx-auto px-4 py-4 space-y-3 font-medium">
-              <Link 
-                to="/" 
+              <Link
+                to="/"
                 className="block text-foreground hover:text-primary transition-smooth py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Início
               </Link>
-              <a 
-                href={isHomePage ? "#problemas" : "/#problemas"} 
+              <a
+                href={isHomePage ? "#problemas" : "/#problemas"}
                 className="block text-foreground hover:text-primary transition-smooth py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Problemas Comuns
               </a>
-              <a 
-                href={isHomePage ? "#servicos" : "/#servicos"} 
+              <a
+                href={isHomePage ? "#servicos" : "/#servicos"}
                 className="block text-foreground hover:text-primary transition-smooth py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Serviços
               </a>
-              <a 
-                href={isHomePage ? "#sobre-dayane" : "/sobre-dayane"} 
+              <a
+                href={isHomePage ? "#sobre-dayane" : "/sobre-dayane"}
                 className="block text-foreground hover:text-primary transition-smooth py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Sobre Dayane
               </a>
-              <a 
-                href={isHomePage ? "#resultados" : "/#resultados"} 
+              <a
+                href={isHomePage ? "#resultados" : "/#resultados"}
                 className="block text-foreground hover:text-primary transition-smooth py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Resultados
               </a>
-              <a 
-                href={isHomePage ? "#depoimentos" : "/#depoimentos"} 
+              <a
+                href={isHomePage ? "#depoimentos" : "/#depoimentos"}
                 className="block text-foreground hover:text-primary transition-smooth py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Depoimentos
               </a>
-              <a 
-                href={isHomePage ? "#faq" : "/#faq"} 
+              <a
+                href={isHomePage ? "#faq" : "/#faq"}
                 className="block text-foreground hover:text-primary transition-smooth py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 FAQ
               </a>
-              <a 
-                href={isHomePage ? "#contato" : "/#contato"} 
+              <a
+                href={isHomePage ? "#contato" : "/#contato"}
                 className="block text-foreground hover:text-primary transition-smooth py-1"
                 onClick={() => setIsMenuOpen(false)}
               >

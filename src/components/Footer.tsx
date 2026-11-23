@@ -1,9 +1,9 @@
 import { Separator } from "@/components/ui/separator";
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
   Instagram,
   Heart,
   ShieldCheck,
@@ -25,10 +25,10 @@ const Footer = () => {
               Clínica de podologia especializada em saúde dos pés e pé diabético em Mogi das Cruzes. Atendimento particular com cuidado humanizado por Dayane Camarinha.
             </p>
             <div>
-              <a 
-                href="https://www.instagram.com/espacopes.podologia" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.instagram.com/espacopes.podologia"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-white/90 hover:text-white bg-white/10 hover:bg-white/20 px-3 py-2 rounded-lg transition-smooth"
               >
                 <Instagram className="w-4 h-4 text-pink-400" />
@@ -86,6 +86,7 @@ const Footer = () => {
               <div className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-primary flex-shrink-0" />
                 <span>Seg à Sex: 08:00 às 18:00</span>
+                <span>Sábado: 09:00 às 14:00</span>
               </div>
             </div>
           </div>
