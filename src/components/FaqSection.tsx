@@ -21,11 +21,11 @@ const FaqSection = () => {
     },
     {
       question: "Que tipo de tratamentos a podologia oferece?",
-      answer: "A podologia oferece uma variedade de tratamentos, incluindo limpeza e higienização dos pés, corte correto das unhas, remoção de calosidades, tratamento de micoses nas unhas, desencravamento, órteses e reflexologia."
+      answer: "A podologia oferece uma variedade de tratamentos, incluindo limpeza e higienização dos pés, corte correto das unhas, remoção de calosidades, tratamento de micoses nas unhas, unha encravada, órteses e reflexologia."
     },
     {
       question: "É seguro fazer um tratamento de podologia?",
-      answer: "Sim, desde que realizado por um profissional qualificado e seguindo as boas práticas de higiene, biossegurança e esterilização."
+      answer: "Sim, desde que realizado por um profissional qualificado e seguindo as boas práticas de higiene, biossegurança e esterilização e seguindo as orientações do podólogo corretamente."
     },
     {
       question: "Como prevenir problemas nos pés?",
@@ -33,7 +33,7 @@ const FaqSection = () => {
     },
     {
       question: "A podologia é indicada para pessoas com diabetes?",
-      answer: "Sim, desde que seja acompanhado por um podólogo especialista em pés diabéticos. Somos especialistas em pés diabéticos pela Universidade Facuminas."
+      answer: "Sim, desde que seja acompanhado por um podólogo capacitado e habilitado em pés diabéticos."
     },
     {
       question: "Quanto tempo dura uma consulta de podologia?",
@@ -41,7 +41,7 @@ const FaqSection = () => {
     },
     {
       question: "O tratamento podológico é doloroso?",
-      answer: "Os tratamentos podológicos não causam dor, mas é possível que algumas pessoas sintam algum desconforto leve, caso já cheguem com inflamações ou dores prévias."
+      answer: "Os tratamentos podológicos não causam dor, mas é possível que algumas pessoas sintam algum desconforto, caso já cheguem com inflamações ou dores prévias."
     }
   ];
 

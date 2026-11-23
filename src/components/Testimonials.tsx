@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star, ChevronDown, ExternalLink } from "lucide-react";
+import googleReviewsLogo from "@/assets/google-reviews.png";
 
 const Testimonials = () => {
   const testimonials = [
@@ -39,6 +40,14 @@ const Testimonials = () => {
   return (
     <section className="py-16 lg:py-24 bg-white border-b border-border/40" id="depoimentos">
       <div className="container mx-auto px-4 max-w-6xl text-center">
+        <div className="flex justify-center mb-4">
+          <img
+            src={googleReviewsLogo}
+            alt="Google Avaliações 5 Estrelas"
+            className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+          />
+        </div>
+
         <h2 className="text-3xl lg:text-4xl font-extrabold text-foreground mb-6">
           Depoimento de Clientes
         </h2>

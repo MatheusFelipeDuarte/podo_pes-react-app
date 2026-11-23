@@ -20,7 +20,7 @@ const Hero = () => {
 
             <div className="space-y-1 text-base sm:text-lg text-foreground/90 font-medium">
               <p className="font-bold text-foreground">
-                Cuidando dos seus Pés há mais de 3 anos!
+                Cuidando dos seus Pés há mais de 9 anos!
               </p>
               <p>
                 Cuide de quem <strong className="text-primary font-bold">te sustenta o dia inteiro!</strong>

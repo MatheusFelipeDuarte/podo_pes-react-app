@@ -5,7 +5,7 @@ const Services = () => {
   const services = [
     {
       title: "Podologia Completa",
-      description: "Uma abordagem completa para cuidar de seus pés, incluindo cuidados, diagnóstico e tratamento personalizado. (Desbaste de calos e calosidades, desencravamento de unhas, corte técnico, hidratação, finalizando com massagem relaxante)."
+      description: "Uma abordagem completa para cuidar de seus pés, incluindo cuidados, diagnóstico e tratamento personalizado. (Desbaste de calos e calosidades, corte técnico, hidratação, finalizando com massagem relaxante simples)."
     },
     {
       title: "Desbaste de calos e calosidades",
@@ -20,28 +20,28 @@ const Services = () => {
       description: "A solução para rachaduras envolve o tratamento para curar o tecido rachado e prevenir mais danos, melhorando assim o conforto e a aparência."
     },
     {
-      title: "Verruga Plantar (Olho de peixe)",
-      description: "Na extração de verrugas, é feito um procedimento seguro para remover a verruga plantar (ou “olho de peixe”) e evitar sua recorrência."
+      title: "Verruga Plantar (HPV)",
+      description: "Na extração de verrugas, é feito um procedimento seguro para remover a verruga plantar (ou HPV) e evitar sua recorrência."
     },
     {
-      title: "Hidratação profunda de parafina quente",
-      description: "É uma técnica que utiliza hidratação intensiva para nutrir profundamente a pele dos pés, ajudando a amaciar e aliviar a pele seca e rachada."
+      title: "Hidratação profunda de parafina quente - SPA",
+      description: "É uma técnica que utiliza hidratação intensiva para nutrir profundamente a pele dos pés, ajudando a amaciar e aliviar a pele seca e rachada (Podologia simples: Corte técnico, polimento com broca, lixamento plantar, hodratação com parafina e massagem simples)."
     },
     {
       title: "Reflexologia Podal (Massagem relaxante e Anti-stress)",
-      description: "Esta é uma massagem relaxante nos pés que tem como objetivo aliviar o estresse e promover o bem-estar através de pontos de pressão estratégicos."
+      description: "Esta é uma massagem relaxante nos pés que tem como objetivo aliviar o estresse e promover o bem-estar através de pontos de pressão estratégicos, tratando enxaquecas, cólicas, insônia e etc."
     },
     {
       title: "Micoses de unhas (fungos)",
-      description: "A terapia para fungos em unhas envolve a aplicação de tratamentos tópicos e laserterapia para eliminar a infecção e recuperar a saúde da unha."
+      description: "A terapia para fungos em unhas envolve a aplicação de tratamentos tópicos e laserterapia para eliminar a infecção fungica e recuperar a saúde da unha."
     },
     {
       title: "Pés Diabéticos",
       description: "Este é um cuidado especializado que se concentra em prevenir e tratar problemas nos pés que podem surgir em pessoas diabéticas, incluindo úlceras e infecções."
     },
     {
-      title: "Tratamento de Órteses (Correção de unha encravada)",
-      description: "Para unhas encravadas, a solução envolve a colocação de dispositivos ortopédicos que ajudam a corrigir e aliviar a pressão da unha, melhorando a condição da lâmina."
+      title: "Tratamento de Órteses (Correção de unha)",
+      description: "A solução envolve a colocação de dispositivos ortopédicos que ajudam a corrigir e aliviar a pressão da unha, melhorando a condição da lâmina."
     },
     {
       title: "Podopediatria",

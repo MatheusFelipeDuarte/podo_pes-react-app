@@ -28,13 +28,12 @@ const LocationSection = () => {
 
             <div className="space-y-2">
               <h3 className="text-xl font-bold text-foreground">
-                Nos visite
+                Visite-nos
               </h3>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
                 Rua Senador Dantas, 484 (Sala 6) - Casarão Maestro Berti – Centro, Mogi das Cruzes – SP
               </p>
               <p className="text-muted-foreground text-sm sm:text-base font-medium">
-                Temos estacionamento próprio no local.
               </p>
             </div>
 

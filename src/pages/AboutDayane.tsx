@@ -3,10 +3,10 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { 
-  GraduationCap, 
-  Award, 
-  Heart, 
+import {
+  GraduationCap,
+  Award,
+  Heart,
   Target,
   Users,
   BookOpen,
@@ -46,7 +46,7 @@ const AboutDayane = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="py-16 lg:py-24 bg-gradient-soft">
         <div className="container mx-auto px-4">
@@ -65,13 +65,13 @@ const AboutDayane = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
               <div className="relative">
                 <div className="relative rounded-2xl overflow-hidden shadow-strong">
-                  <img 
+                  <img
                     src={dayanePortrait2}
                     alt="Dayane Camarinha - Podóloga especialista"
                     className="w-full h-auto object-cover"
                   />
                 </div>
-                
+
                 <Card className="mt-6 bg-white shadow-medium border-primary/20">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-3 mb-4">
@@ -99,12 +99,12 @@ const AboutDayane = () => {
                       Apresentação
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Olá, me chamo Dayane, sou podóloga e recentemente abri uma clínica. Sou formada pela universidade 
+                      Olá, me chamo Dayane, sou podóloga e recentemente abri uma clínica. Sou formada pela universidade
                       Unicesumar e pós-graduada em podologia pela universidade Facuminas, com ênfase em pé diabético.
                     </p>
                     <p className="text-muted-foreground leading-relaxed mt-4">
-                      Possuo diversos cursos extracurriculares e atualmente estou fazendo uma pós-graduação em Diabetes 
-                      e Complicações Crônicas e Enfermagem em Dermatologia e Tratamento de Feridas. Também sou técnica 
+                      Possuo diversos cursos extracurriculares e atualmente estou fazendo uma pós-graduação em Diabetes
+                      e Complicações Crônicas e Enfermagem em Dermatologia e Tratamento de Feridas. Também sou técnica
                       em Nutrição e Dietética pela faculdade e colégio Paschoal Dantas.
                     </p>
                   </CardContent>
@@ -119,7 +119,7 @@ const AboutDayane = () => {
                       <div>
                         <h4 className="font-semibold text-foreground mb-2">Especialização Destacada</h4>
                         <p className="text-muted-foreground">
-                          Capacitada em Pé Diabético pela Universidade Facuminas, oferecendo tratamento 
+                          Capacitada em Pé Diabético pela Universidade Facuminas, oferecendo tratamento
                           especializado e humanizado para pacientes com diabetes.
                         </p>
                       </div>
@@ -212,12 +212,12 @@ const AboutDayane = () => {
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-foreground mb-4">Atividades Profissionais</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Atendimento especializado em podologia clínica e estética, com foco em podologia para diabéticos, 
-                  geriatria e tratamento de feridas, tratamento de infecção e micose. Utilização de técnicas avançadas 
+                  Atendimento especializado em podologia clínica e estética, com foco em podologia para diabéticos,
+                  geriatria e tratamento de feridas, tratamento de infecção e micose. Utilização de técnicas avançadas
                   como laserterapia.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Na Clínica Espaço Pés, oferecemos atendimento qualificado em podologia, combinando expertise 
+                  Na Clínica Espaço Pés, oferecemos atendimento qualificado em podologia, combinando expertise
                   profissional com equipamentos modernos e cuidado humanizado para cada paciente.
                 </p>
               </CardContent>
@@ -240,13 +240,10 @@ const AboutDayane = () => {
                     <h3 className="text-2xl font-bold">Missão</h3>
                   </div>
                   <p className="text-white/90 leading-relaxed">
-                    Nossa missão é oferecer o melhor atendimento para nossos pacientes com tratamento qualificados, 
-                    específicos e humanizado para trazer conforto e bem-estar a cada paciente.
+                    Oferecer o melhor atendimento para todos os pacientes, com tratamentos qualificados, específicos e humanizados proporcionando conforto e bem-estar a cada paciente.
                   </p>
                   <p className="text-white/90 leading-relaxed mt-4">
-                    Trazer ensino de qualidade para alunos universitários, técnicos e capacitação profissional para 
-                    profissionais que necessitam de aperfeiçoamento, tudo com a maior responsabilidade, segurança, 
-                    tecnologia e ética profissional.
+                    Oferecer orientação e ensino de qualidade para alunos universitários, técnicos e capacitação profissional para profissionais que necessitam de aperfeiçoamento profissional, tudo com a maior responsabilidade, segurança, tecnologia e ética profissional.
                   </p>
                 </CardContent>
               </Card>
@@ -260,14 +257,10 @@ const AboutDayane = () => {
                     <h3 className="text-2xl font-bold text-foreground">Quem Somos</h3>
                   </div>
                   <p className="text-muted-foreground leading-relaxed">
-                    Nós somos uma clínica de Podologia, Especialização e Saúde. Com foco em atendimento e ensino 
-                    qualificado para os pés. Com profissionais especializados e capacitados para desenvolver tratamentos 
-                    específicos e qualificados na podologia clínica.
+                    Uma clínica de Podologia, Especialização e Saúde. Com foco em atendimento e orientação qualificada para os pés. Com profissional especializada em podologia e capacitada para desenvolver tratamentos dos pés na podologia clínica e estética.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mt-4">
-                    A saúde dos pés é fundamental para o bem-estar geral, e muitas vezes não damos a atenção necessária 
-                    a essa parte do corpo. No Espaço Pés, você encontra profissionais especializados em podologia, prontos 
-                    para cuidar dos seus pés com carinho e expertise.
+                    A saúde dos pés é fundamental para o bem-estar geral, e muitas vezes não damos a atenção necessária a essa parte do corpo. Na Espaço Pés, você encontra profissional capacitada e habilitada a cuidar dos seus pés com carinho, profissionalismo e expertise.
                   </p>
                 </CardContent>
               </Card>
@@ -279,7 +272,7 @@ const AboutDayane = () => {
                   Agende sua Consulta
                 </h3>
                 <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Agendar uma consulta pode prevenir problemas futuros, como calosidades, unhas encravadas e infecções. 
+                  Agendar uma consulta pode prevenir problemas futuros, como calosidades, unhas encravadas e infecções.
                   Além disso, é uma ótima oportunidade para relaxar e dar aos seus pés o cuidado que eles merecem.
                 </p>
                 <Button variant="hero" size="lg" asChild>
